@@ -18,7 +18,7 @@ class Rectangle():
     #       "A rectangle with width ____ and height ____"
 
     # YOUR CODE HERE
-    def __str__(self, width, height):
+    def __str__(self):
         return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
 
@@ -29,7 +29,11 @@ class Rectangle():
     #       False otherwise
 
     # YOUR CODE HERE
-
+    def verify_input(self):
+        if self.width >=0 and self.height >= 0:
+            return True
+        else:
+            return False
 
 
     # Create the "area" method
